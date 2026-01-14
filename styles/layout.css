@@ -1,0 +1,46 @@
+/* layout.css */
+
+article {
+  max-width: 900px;
+}
+
+.sidenote,
+.marginnote {
+  width: 300px;        
+  margin-right: -340px; /* 본문에서 얼마나 떨어질지 */
+  font-size: 1.0rem;
+  line-height: 1.55;
+}
+
+.sidenote {
+  background: rgba(0,0,0,0.03);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* .sidenote::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.6em;
+  width: 0.8rem;
+  height: 1px;
+  background: #aaa;
+} */
+
+@media (max-width: 760px) {
+  .sidenote,
+  .marginnote {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 1rem 0;
+    background: #f9f9f9;
+  }
+}
+
+@page {
+  @bottom-center {
+    content: counter(page);
+  }
+}

@@ -1,0 +1,32 @@
+/* semantics.css */
+/***
+md
+----
+:::theory
+This paragraph discusses theory.
+:::
+
+
+render.js
+----
+html = html.replace(
+  /<p>:::theory<\/p>(.*?)<p>:::<\/p>/gs,
+  '<div class="block theory">$1</div>'
+);
+
+***/
+
+.block.theory {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.block.note {
+  border-left: 2px solid #ccc;
+  padding-left: 1rem;
+}
+
+.block.warning {
+  color: #800;
+}
+

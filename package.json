@@ -1,0 +1,17 @@
+{
+  "name": "markedjs",
+  "version": "1.0.0",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "highlight": "^0.2.4",
+    "marked": "^17.0.1",
+    "marked-highlight": "^2.2.3"
+  }
+}
