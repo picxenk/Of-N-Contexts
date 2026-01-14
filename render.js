@@ -42,7 +42,7 @@ const template = fs.readFileSync('template.html', 'utf-8');
 
 const output = template
   .replace('{{content}}', html)
-  .replace('{{title}}', 'Markdown + Tufte');
+  .replace('{{title}}', 'Of-N-Contexts');
 
 fs.writeFileSync('index.html', output);
 
