@@ -1,13 +1,22 @@
 /* layout.css */
 
 article {
+  width: 80%;
   max-width: 900px;
+  /* margin: 0 auto; */
 }
 
 .sidenote,
 .marginnote {
-  width: 300px;        
-  margin-right: -340px; /* 본문에서 얼마나 떨어질지 */
+  float: right;
+  clear: right;
+
+  /* width: 300px;         */
+  /* margin-right: -340px; */
+  /* margin-right: max(-340px, calc(-100vw + 100% + 2rem)); */
+  width: clamp(180px, 35%, 300px);
+  margin-right: calc(-1 * clamp(200px, 38%, 340px));
+
   font-size: 1.0rem;
   line-height: 1.55;
 }
@@ -29,6 +38,11 @@ article {
 } */
 
 @media (max-width: 760px) {
+  article {
+    width: 92%;
+    max-width: none;
+  }
+
   .sidenote,
   .marginnote {
     float: none;
